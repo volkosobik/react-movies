@@ -6,7 +6,7 @@
   "homepage": "https://volkosobik.github.io/react-movies",
   "scripts": {
     "start": "parcel ./index.html",
-    "predeploy": "parcel build ./index.html --out-dir=build",
+    "predeploy": "parcel build ./index.html --out-dir=build --public-url ./",
     "deploy": "gh-pages -d build"
   },
   "author": "",

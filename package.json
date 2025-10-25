@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.jsx",
+  "homepage": "https://volkosobik.github.io/react-movies",
   "scripts": {
     "start": "parcel ./index.html",
-    "build": "parcel build ./index.html --out-dir=build"
+    "predeploy": "parcel build ./index.html --out-dir=build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel-bundler": "^1.12.5"
   }
 }
